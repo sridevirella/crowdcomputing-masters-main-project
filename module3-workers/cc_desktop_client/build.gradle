@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+group 'distributed.systems.mqtt'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {url 'https://oss.sonatype.org/content/repositories/snapshots'}
+}
+
+allprojects {
+    wrapper {
+        gradleVersion = '6.6.1'
+    }
+}
+
+dependencies {
+    implementation "org.junit.jupiter:junit-jupiter-engine:5.6.2"
+    implementation "org.junit.jupiter:junit-jupiter-api:5.6.2"
+    implementation "org.mockito:mockito-core:3.5.7"
+    implementation "org.mockito:mockito-junit-jupiter:3.5.7"
+    implementation "javax.ws.rs:javax.ws.rs-api:2.1.1"
+    compile group: 'org.eclipse.paho', name: 'org.eclipse.paho.client.mqttv3', version: '1.2.5'
+    compile group: 'org.json', name: 'json', version: '20090211'
+    implementation group: 'org.controlsfx', name: 'controlsfx', version: '8.0.5'
+}
+
+javafx {
+    modules = ['javafx.controls']
+}
+
+mainClassName = 'MqttFxApp'

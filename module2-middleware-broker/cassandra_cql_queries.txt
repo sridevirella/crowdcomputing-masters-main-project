@@ -1,0 +1,60 @@
+
+>cqlsh
+- creating keyspace            
+create keyspace crowdcomputing with replication={'class':'SimpleStrategy', 'replication_factor':1};
+
+
+Table Schemas
+==================================
+ 
+CREATE TABLE Worker(
+   workerId text PRIMARY KEY,
+   deviceOS text,
+   isAvailable boolean 
+);
+
+CREATE TABLE Task(
+   taskId timeuuid PRIMARY KEY,
+   fileName text,
+   fileContent text,
+   fileSize int,
+   mimeType text,
+   shortName text,
+   description text,
+   dueDate text,
+   size text,
+   author text,
+   rewards text
+);
+
+
+CREATE TABLE TaskProcessPool(
+   sno int,
+   taskId timeuuid,
+   dueDate timestamp,
+   PRIMARY KEY(sno, dueDate, taskId)
+) WITH CLUSTERING ORDER BY (dueDate ASC);
+
+
+CREATE TABLE SubTaskProcessPool(
+ 
+   taskId timeuuid,
+   initiatedTime timestamp,
+   PRIMARY KEY(taskId)
+);
+
+CREATE TABLE SubTask(
+   taskId timeuuid,
+   workerId text,
+   subTask text,
+   subTaskResult text,
+   processed boolean,
+   PRIMARY KEY(taskId, workerId)
+);
+
+CREATE TABLE accumulatedresults(
+ 
+   taskId UUID,
+   result text,
+   PRIMARY KEY(taskId)
+);

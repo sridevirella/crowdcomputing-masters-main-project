@@ -1,0 +1,9 @@
+taskId:bb109560-9f48-11eb-8a73-0f64e84ff099;Short Name: h;Description: h;Rewards: 1;Size: 1;Author: 1;Due Date: 2021-04-17T01:48;
+bb109560-9f48-11eb-8a73-0f64e84ff099;Received executable File for : h
+taskId:44ad01f0-9f49-11eb-8a73-0f64e84ff099;Short Name: testt;Description: hm;Rewards: 1;Size: 1;Author: 1;Due Date: 2021-04-17T01:51;
+taskId:5aea8f90-9f4a-11eb-973a-2dd84ba8ceb4;Short Name: hm;Description: kk;Rewards: 1;Size: 1;Author: 1;Due Date: 2021-04-17T01:59;
+5aea8f90-9f4a-11eb-973a-2dd84ba8ceb4;Received executable File for : hm
+taskId:b06b9950-9f4a-11eb-973a-2dd84ba8ceb4;Short Name: he;Description: k;Rewards: 1;Size: 1;Author: 1;Due Date: 2021-04-17T02:02;
+b06b9950-9f4a-11eb-973a-2dd84ba8ceb4;Received executable File for : he
+taskId:de55ca60-9f4b-11eb-973a-2dd84ba8ceb4;Short Name: testah;Description: hh;Rewards: 1;Size: 1;Author: 1;Due Date: 2021-04-17T02:10;
+de55ca60-9f4b-11eb-973a-2dd84ba8ceb4;Received executable File for : testah
