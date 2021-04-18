@@ -44,7 +44,7 @@ function getResult(message) {
     return "{\n" + 'Task: ' + resultJson.taskName + "\n" + "Result: " +resultJson.result + "\n}";
 }
 
-//Encode file content from byte[] to base64 string.
+//Encode file content byte[] with base64 string.
 function encode(data)
 {
     let str = String.fromCharCode.apply(null,data);
