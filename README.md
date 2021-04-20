@@ -1,7 +1,6 @@
 # A Microservices-based System for Crowd Computing
 
 **Overview:**
-
 This project provides a distributed computing framework that enables the crowd computing paradigm on the smart devices (e.g., mobile phones, computers) by utilizing the volunteered idle CPU cycles of smart devices owned by the crowd. Crowd computing is a way of solving computationally intensive task or problem in a distributed manner. The large computationally intensive task is divided into multiple subtasks that are distributed over multiple computing devices (mobile phones, computers) for processing.
 This framework has three main components. 1) The dashboard, 2) The middleware broker, and 3) The workers. All three components would communicate with each other through a 4th component called MQTT broker.
 --------------------------------------------------------------------------------------------------------------------------
@@ -15,9 +14,9 @@ This framework has three main components. 1) The dashboard, 2) The middleware br
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Task Result:** This module displays the computed result of the task that sent by the middleware broker.
 
-	 **Used Technologies:** React, NodeJS, Express, Mosca MQTT client, Bootstrap, Material-UI, and Socket.io for the communication between React and Node server.
+	 * **Used Technologies:** React, NodeJS, Express, Mosca MQTT client, Bootstrap, Material-UI, and Socket.io for the communication between React and Node server.
   
-	 **Installation: **
+	 * **Installation: **
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Download and install Node.js version v14.16.0 or higher and NPM through a Node version manager or the installer from https://nodejs.org/en/download/. For installation, you can refer https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 
@@ -25,7 +24,7 @@ This framework has three main components. 1) The dashboard, 2) The middleware br
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Clone both repositories (`/module1-dashboard/mcc-dashboard-nodejs/`, `/module1-dashboard/mcc-dashboard-react/`) into your local machine.
 
-	 **Run:** Note: You need to run the NodeJS app before running the React app.
+	 * **Run:** Note: You need to run the NodeJS app before running the React app.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- For the NodeJS app, open a terminal, navigate to the project folder and run the command `npm install` to install all project dependencies into the node_modules folder. Then start the application by running the command “npm start”. Alternatively, you can import the project into IDE (e.g., Visual studio code, WebStorm) and run the application.
 
