@@ -7,7 +7,7 @@ This framework has three main components. 1) The dashboard, 2) The middleware br
 
 1) **Dashboard:** It is a React, NodeJS based web application that allows the user to define a task with a set of properties and a file. This also displays the computed task results to the user.
 
-   **Modules:** 
+   **Modules:** 
 
     i.   **MQTT connection:** This module establishes a connection with the MQTT broker through an MQTT client library to publish and receive the messages (tasks or results) from the middleware broker.
 
@@ -15,16 +15,16 @@ This framework has three main components. 1) The dashboard, 2) The middleware br
 
     iii. **Task Result:** This module displays the computed result of the task that sent by the middleware broker.
 
-   **Used Technologies:** React, NodeJS, Express, Mosca MQTT client, Bootstrap, Material-UI, and Socket.io for the communication between React and Node server.
+  **Used Technologies:** React, NodeJS, Express, Mosca MQTT client, Bootstrap, Material-UI, and Socket.io for the communication between React and Node server.
   
-   **Installation: **
+  **Installation: **
     - Download and install Node.js version v14.16.0 or higher and NPM through a Node version manager or the installer from https://nodejs.org/en/download/. For installation, you can refer https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 
     - Through the terminal, download and install React using the command `npm install react`.
 
     - Clone both repositories (`/module1-dashboard/mcc-dashboard-nodejs/`, `/module1-dashboard/mcc-dashboard-react/`) into your local machine.
 
-   **Run:** Note: You need to run the NodeJS app before running the React app.
+  **Run:** Note: You need to run the NodeJS app before running the React app.
 
     - For the NodeJS app, open a terminal, navigate to the project folder and run the command `npm install` to install all project dependencies into the node_modules folder. Then start the application by running the command “npm start”. Alternatively, you can import the project into IDE (e.g., Visual studio code, WebStorm) and run the application.
 
