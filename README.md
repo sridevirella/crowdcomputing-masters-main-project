@@ -79,6 +79,7 @@ It is responsible for registering subscribed workers, receiving the task details
     
 	- Import the project into an IDE (IntelliJ, Eclipse). To run the JavaFx application for the first time from the IDE follow the following steps:
     Go to Gradle -> cc_desktop_client -> Tasks -> application -> run.
+-------------------------------------------------------------------------------------------------------------------------
 
 4) **MQTT Broker:** Download and install Mosquitto broker on your machine from https://mosquitto.org/download/.
 -------------------------------------------------------------------------------------------------------------------------
