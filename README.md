@@ -11,9 +11,9 @@ This framework has three main components. 1) The dashboard, 2) The middleware br
     * **Define Task:** This allows the user to define a task through a set of properties such as a short name for the task, a brief description about the task, due date to run the task on the worker device, the actual size of the task, the author who initiated the task, and the reward to the worker for executing the task.
     * **Task Result:** This module displays the computed result of the task that sent by the middleware broker.
 
-+ Used Technologies: React, NodeJS, Express, Mosca MQTT client, Bootstrap, Material-UI, and Socket.io for the communication between React and Node server.
++ **Used Technologies:** React, NodeJS, Express, Mosca MQTT client, Bootstrap, Material-UI, and Socket.io for the communication between React and Node server.
 
-+ Installation: 
++ **Installation:** 
     - Download and install Node.js version v14.16.0 or higher and NPM through a Node version manager or the installer from https://nodejs.org/en/download/. For installation, you can refer https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 
     - Through the terminal, download and install React using the command `npm install react`.
@@ -80,7 +80,7 @@ It is responsible for registering subscribed workers, receiving the task details
     Go to Gradle -> cc_desktop_client -> Tasks -> application -> run.
 -------------------------------------------------------------------------------------------------------------------------
 
- **MQTT Broker:** Download and install Mosquitto broker on your machine from https://mosquitto.org/download/
+**MQTT Broker:** Download and install Mosquitto broker on your machine from https://mosquitto.org/download/.
 -------------------------------------------------------------------------------------------------------------------------
 
 **Steps to run complete system** (For running each component, you can refer to the `Run` section under each component)
