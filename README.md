@@ -7,29 +7,29 @@ This framework has three main components. 1) The dashboard, 2) The middleware br
 --------------------------------------------------------------------------------------------------------------------------
 1. **Dashboard:** It is a React, NodeJS based web application that allows the user to define a task with a set of properties and a file. This also displays the computed task results to the user.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* **Modules:** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Modules:** 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;i.   **MQTT connection:** This module establishes a connection with the MQTT broker through an MQTT client library to publish and receive the messages (tasks or results) from the middleware broker.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbspi.   **MQTT connection:** This module establishes a connection with the MQTT broker through an MQTT client library to publish and receive the messages (tasks or results) from the middleware broker.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;ii.  **Define Task:** This allows the user to define a task through a set of properties such as a short name for the task, a brief description about the task, due date to run the task on the worker device, the actual size of the task, the author who initiated the task, and the reward to the worker for executing the task.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbspii.  **Define Task:** This allows the user to define a task through a set of properties such as a short name for the task, a brief description about the task, due date to run the task on the worker device, the actual size of the task, the author who initiated the task, and the reward to the worker for executing the task.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;iii. **Task Result:** This module displays the computed result of the task that sent by the middleware broker.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbspiii. **Task Result:** This module displays the computed result of the task that sent by the middleware broker.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* **Used Technologies:** React, NodeJS, Express, Mosca MQTT client, Bootstrap, Material-UI, and Socket.io for the communication between React and Node server.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp**Used Technologies:** React, NodeJS, Express, Mosca MQTT client, Bootstrap, Material-UI, and Socket.io for the communication between React and Node server.
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* **Installation: **
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp**Installation: **
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;- Download and install Node.js version v14.16.0 or higher and NPM through a Node version manager or the installer from https://nodejs.org/en/download/. For installation, you can refer https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp- Download and install Node.js version v14.16.0 or higher and NPM through a Node version manager or the installer from https://nodejs.org/en/download/. For installation, you can refer https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;- Through the terminal, download and install React using the command `npm install react`.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp- Through the terminal, download and install React using the command `npm install react`.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;- Clone both repositories (`/module1-dashboard/mcc-dashboard-nodejs/`, `/module1-dashboard/mcc-dashboard-react/`) into your local machine.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp- Clone both repositories (`/module1-dashboard/mcc-dashboard-nodejs/`, `/module1-dashboard/mcc-dashboard-react/`) into your local machine.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* **Run:** Note: You need to run the NodeJS app before running the React app.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp**Run:** Note: You need to run the NodeJS app before running the React app.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;- For the NodeJS app, open a terminal, navigate to the project folder and run the command `npm install` to install all project dependencies into the node_modules folder. Then start the application by running the command “npm start”. Alternatively, you can import the project into IDE (e.g., Visual studio code, WebStorm) and run the application.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp- For the NodeJS app, open a terminal, navigate to the project folder and run the command `npm install` to install all project dependencies into the node_modules folder. Then start the application by running the command “npm start”. Alternatively, you can import the project into IDE (e.g., Visual studio code, WebStorm) and run the application.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;- For the React app, open a new terminal, navigate to the project folder and run the command `npm install` to install all project dependencies into the node_modules folder. Then start the application by running the command “npm start”. Alternatively, you can import the project into IDE (e.g., Visual studio code, WebStorm) and run the application.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp- For the React app, open a new terminal, navigate to the project folder and run the command `npm install` to install all project dependencies into the node_modules folder. Then start the application by running the command “npm start”. Alternatively, you can import the project into IDE (e.g., Visual studio code, WebStorm) and run the application.
 --------------------------------------------------------------------------------------------------------------------------
 
 2)	**The Middleware Broker:** A Spring Boot microservices server application that acts as a middleman between user dashboard application and worker application. It has 4 main modules or microservices. All four microservices register with Eureka service discovery and uses RabbitMQ messaging queue for their inter-service communication.
