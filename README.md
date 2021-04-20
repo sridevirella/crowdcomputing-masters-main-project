@@ -65,7 +65,7 @@ It is responsible for registering subscribed workers, receiving the task details
 
     - **The Desktop Client:** It is a JavaFX application that runs on any desktop machine to receive tasks in the form of .jar from the middleware broker, accepting or rejecting the tasks, running .jar subtasks in the background and, sends the computed result back to the middleware broker through MQTT.
 
-    - **Used Technologies:** Java 8, Android, Async Eclipse Paho Android Client, Broadcast Receiver, Java 11 for JavaFX, Async Eclipse Paho Java Client, and Gradle Build tool.
++ **Used Technologies:** Java 8, Android, Async Eclipse Paho Android Client, Broadcast Receiver, Java 11 for JavaFX, Async Eclipse Paho Java Client, and Gradle Build tool.
 
 + **Installation:**
 
