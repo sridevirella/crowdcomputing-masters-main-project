@@ -76,7 +76,8 @@ It is responsible for registering subscribed workers, receiving the task details
 + **Run:**
 
     - For the mobile client, import the project into android studio IDE and select `app` from the run/debug configurations drop-down menu in the toolbar. Enable developer options in your android mobile device and connect it to your computer. In the toolbar, select your connected mobile device to run the app from the target device drop-down menu. Alternatively, you can run the application on the emulator as well.
-    - Import the project into an IDE (IntelliJ, Eclipse). To run the JavaFx application for the first time from the IDE follow the following steps:
+    
+	- Import the project into an IDE (IntelliJ, Eclipse). To run the JavaFx application for the first time from the IDE follow the following steps:
     Go to Gradle -> cc_desktop_client -> Tasks -> application -> run.
 
 **MQTT Broker:** Download and install Mosquitto broker on your machine from https://mosquitto.org/download/.
