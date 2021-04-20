@@ -52,9 +52,9 @@ It is responsible for registering subscribed workers, receiving the task details
 
     - Navigate to the bin folder located within the Apache Cassandra folder, open a terminal and run the command `Cassandra` to start the Cassandra database instance.
 
-    - Open a new terminal and execute the command `cqlsh` to start the CQL shell. In the shell, run the CQL commands or schemas from the file (/module2-middleware-broker/Cassandra-sql-queries.txt) to create keyspaces and the tables in the database.
+    - Open a new terminal and execute the command `cqlsh` to start the CQL shell. In the shell, run the CQL commands or schemas from the file `(/module2-middleware-broker/Cassandra-sql-queries.txt)` to create keyspaces and the tables in the database.
 
-    - In path /module2-middleware-broker/microservices-app/ navigate to each microservice application folder (e.g., /microservices-app/eurekaserver) and open a separate terminal (or) git bash for each microservice and run the command “./mvnw spring-boot: run”. The “eurekaserver” needs to be run before running any other microservices. Alternatively, you can import the project into IDE (e.g., IntelliJ, Eclipse) and run the application.
+    - In path /module2-middleware-broker/microservices-app/ navigate to each microservice application folder (e.g., /microservices-app/eurekaserver) and open a separate terminal (or) git bash for each microservice and run the command `./mvnw spring-boot: run`. The `eurekaserver` needs to be run before running any other microservices. Alternatively, you can import the project into IDE (e.g., IntelliJ, Eclipse) and run the application.
 -------------------------------------------------------------------------------------------------------------------------
 
 3) **The Workers:** The workers could be android devices or desktop devices. It has two sub components. 1) The mobile client, and 2) The desktop client.
@@ -73,29 +73,29 @@ It is responsible for registering subscribed workers, receiving the task details
    
     - Clone both repositories (/module3-workers/MqttClient/, (/module3-workers/cc_desktop_client/) into your local machine.
 
-+ **Run: **
++ **Run:**
 
-    - For the mobile client, import the project into android studio IDE and select ‘app’ from the run/debug configurations drop-down menu in the toolbar. Enable developer options in your android mobile device and connect it to your computer. In the toolbar, select your connected mobile device to run the app from the target device drop-down menu. Alternatively, you can run the application on the emulator as well.
+    - For the mobile client, import the project into android studio IDE and select `app` from the run/debug configurations drop-down menu in the toolbar. Enable developer options in your android mobile device and connect it to your computer. In the toolbar, select your connected mobile device to run the app from the target device drop-down menu. Alternatively, you can run the application on the emulator as well.
     - Import the project into an IDE (IntelliJ, Eclipse). To run the JavaFx application for the first time from the IDE follow the following steps:
     Go to Gradle -> cc_desktop_client -> Tasks -> application -> run.
 -------------------------------------------------------------------------------------------------------------------------
 
-**MQTT Broker:** Download and install Mosquitto broker on your machine from https://mosquitto.org/download/
+ **MQTT Broker:** Download and install Mosquitto broker on your machine from https://mosquitto.org/download/
 -------------------------------------------------------------------------------------------------------------------------
 
-**Steps to run complete system** (For running each component, you can refer to the “Run” section under each component)
+**Steps to run complete system** (For running each component, you can refer to the `Run` section under each component)
 
-* Open a terminal and start the Mosquitto broker using the command “net start mosquitto”.
+* Open a terminal and start the Mosquitto broker using the command `net start mosquitto`.
 
-* Open a new terminal and start all the microservices instances of the middleware broker using command “./mvnw spring-boot: run”.
+* Open a new terminal and start all the microservices instances of the middleware broker using command `./mvnw spring-boot: run`.
 
-* Now, go to your browser and type the Eureka server URL “localhost:8761”, you should be able to see all four running microservices instances in eureka server page.
+* Now, go to your browser and type the Eureka server URL `localhost:8761`, you should be able to see all four running microservices instances in eureka server page.
 
-* To start the dashboard app, open one terminal for each React and nodeJS application then run the command “npm start” for both.
+* To start the dashboard app, open one terminal for each React and nodeJS application then run the command `npm start` for both.
 
-* To open the dashboard, go to your browser and type the URL “localhost:3000”, you should be able to see the login page of the dashboard.
+* To open the dashboard, go to your browser and type the URL `localhost:3000`, you should be able to see the login page of the dashboard.
 
-* Install and run the Android or the desktop application on your device as mentioned under the workers component (see the “run” section).
+* Install and run the Android or the desktop application on your device as mentioned under the workers component (see the `run` section).
 -------------------------------------------------------------------------------------------------------------------------
 
 **To initiate a task:**
@@ -104,10 +104,10 @@ It is responsible for registering subscribed workers, receiving the task details
 
 * Login into the dashboard with credentials User Name: guest and Password: guest.
 
-* Click on “define a task” tab and enter task short name, description, due date, size, author, rewards, and upload a file (the actual computational task) from /TestFiles/ either .apk or .jar or .txt.
+* Click on `define a task` tab and enter task short name, description, due date, size, author, rewards, and upload a file (the actual computational task) from /TestFiles/ either .apk or .jar or .txt.
 
-* Under “Received Tasks” tab you will be receiving details about the task. For the received task, click accept button if you are willing to run the task on your device.
+* Under `Received Tasks` tab you will be receiving details about the task. For the received task, click accept button if you are willing to run the task on your device.
 
-* After the task due date expiry, you will be receiving the executable file under the “Received Tasks”. Click on the executable file to run the task on your device.
+* After the task due date expiry, you will be receiving the executable file under the `Received Tasks`. Click on the executable file to run the task on your device.
 
-* Now, at the dashboard side, under the tab “Result” you can see the computed or accumulated results sent by the middleware broker.
+* Now, at the dashboard side, under the tab `Result` you can see the computed or accumulated results sent by the middleware broker.
