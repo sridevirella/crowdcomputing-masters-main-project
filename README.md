@@ -81,7 +81,7 @@ It is responsible for registering subscribed workers, receiving the task details
     Go to Gradle -> cc_desktop_client -> Tasks -> application -> run.
 -------------------------------------------------------------------------------------------------------------------------
 
-4) **MQTT Broker:** Download and install Mosquitto broker on your machine from https://mosquitto.org/download/.
+4) **MQTT Broker:** Download and install Mosquitto broker on your machine from https://mosquitto.org/download/. In your machine, open port `1883` in your firewall inbound and outbound to allow connections on the port.
 -------------------------------------------------------------------------------------------------------------------------
 
 **Steps to run complete system** (For running each component, you can refer to the `Run` section under each component)
