@@ -3,7 +3,7 @@
 **Overview**:
 This project provides a distributed computing framework that enables the crowd computing paradigm on the smart devices (e.g., mobile phones, computers) by utilizing the volunteered idle CPU cycles of smart devices owned by the crowd. Crowd computing is a way of solving computationally intensive task or problem in a distributed manner. The large computationally intensive task is divided into multiple subtasks that are distributed over multiple computing devices (mobile phones, computers) for processing.
 
-This framework has three main components. 1) The dashboard, 2) The middleware broker, and 3) The workers. All three components would communicate with each other through a 4th component called MQTT broker.
+This framework has three main components. 1) The dashboard, 2) The middleware broker, and 3) The workers. All three components would communicate with each other through a MQTT broker.
 
 1) **Dashboard:** It is a React, NodeJS based web application that allows the user to define a task with a set of properties and a file. This also displays the computed task results to the user.
 + **Modules:** 
