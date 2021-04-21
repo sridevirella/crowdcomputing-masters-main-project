@@ -84,7 +84,7 @@ It is responsible for registering subscribed workers, receiving the task details
 4) **MQTT Broker:** Download and install Mosquitto broker on your machine from https://mosquitto.org/download/. In your machine, open port `1883` in your firewall inbound and outbound to allow connections on the port.
 -------------------------------------------------------------------------------------------------------------------------
 
-**Steps to run complete system** (For running each component, you can refer to the `Run` section under each component)
+**Steps to run complete system** ( To run any component, refer to the component's `Run` section for clear instructions.)
 
 * Open a terminal and start the Mosquitto broker using the command `net start mosquitto`.
 
