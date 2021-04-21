@@ -5,13 +5,13 @@ This project provides a distributed computing framework that enables the crowd c
 
 This framework has three main components. 1) The dashboard, 2) The middleware broker, and 3) The workers. All three components would communicate with each other through a MQTT broker.
 
-1) **Dashboard:** It is a React, NodeJS based web application that allows the user to define a task with a set of properties and a file. This also displays the computed task results to the user.
+1) **Dashboard:** It is a React, NodeJS based web application that allows the user to define a task with a set of properties and a file. This also displays the computed task results to the user. The React and NodeJS server use sockets for two-way communication. 
 + **Modules:** 
     * **MQTT connection:** This module establishes a connection with the MQTT broker through an MQTT client library to publish and receive the messages (tasks or results) from the middleware broker.
     * **Define Task:** This allows the user to define a task through a set of properties such as a short name for the task, a brief description about the task, due date to run the task on the worker device, the actual size of the task, the author who initiated the task, and the reward to the worker for executing the task.
     * **Task Result:** This module displays the computed result of the task that sent by the middleware broker.
 
-+ **Used Technologies:** React, NodeJS, Express, Mosca MQTT client, Bootstrap, Material-UI, and Socket.io for the communication between React and Node server.
++ **Used Technologies:** React, NodeJS, Express, Mosca MQTT client, Bootstrap, Material-UI, and Socket.io.
 
 + **Installation:** 
     - Download and install Node.js version v14.16.0 or higher and NPM through a Node version manager or the installer from https://nodejs.org/en/download/. For installation, you can refer https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
