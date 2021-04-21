@@ -105,9 +105,9 @@ It is responsible for registering subscribed workers, receiving the task details
 
 * Login into the dashboard with credentials User Name: guest and Password: guest.
 
-* Click on `define a task` tab and enter task short name, description, due date, size, author, rewards, and upload a file (the actual computational task) from /TestFiles/ either .apk or .jar or .txt.
+* Click on the `define a task` tab and enter the task's short name, description, due date, size, author, rewards, and upload a file (the actual computational task) from /TestFiles/ either .apk or .jar or .txt.
 
-* Under `Received Tasks` tab you will be receiving details about the task. For the received task, click accept button if you are willing to run the task on your device.
+* Under the Received Tasks` tab, you will be receiving details about the task. Click accept button if you are willing to run the task on your device.
 
 * After the task due date expiry, you will be receiving the executable file under the `Received Tasks`. Click on the executable file to run the task on your device.
 
