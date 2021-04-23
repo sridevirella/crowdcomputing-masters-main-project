@@ -51,7 +51,7 @@ function encode(data)
     return btoa(str);
 }
 
-//API endpoint to receive task details from React and also publish tasks to the MQTT.
+//API endpoint to receive task details from React and publish tasks to the MQTT.
 app.post('/postTask', (req, res) => {
 
     let taskDetailsObj = JSON.parse(req.body.taskDetails)

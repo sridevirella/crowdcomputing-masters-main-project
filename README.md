@@ -47,14 +47,19 @@ It is responsible for registering subscribed workers, receiving the task details
 	- Clone repository /module2-middleware-broker/ into your local machine.
 
     - Download and install Apache Cassandra from https://cassandra.apache.org/doc/latest/getting_started/installing.html
+	
+	- Download and install RabbitMQ from https://www.rabbitmq.com/download.html.
 
 + **Run:** To run the Spring Boot Microservices application follow below steps
 
     - Navigate to the bin folder located within the Apache Cassandra folder, open a terminal and run the command `Cassandra` to start the Cassandra database instance.
 
     - Open a new terminal and execute the command `cqlsh` to start the CQL shell. In the shell, run the CQL commands or schemas from the file `(/module2-middleware-broker/Cassandra-sql-queries.txt)` to create keyspaces and the tables in the database.
+	
+	- After successful installation of RabbitMQ, In a browser open `localhost:15672`, you should be able to see running RabbitMQ instance.
 
     - In path /module2-middleware-broker/microservices-app/ navigate to each microservice application folder (e.g., /microservices-app/eurekaserver) and open a separate terminal (or) git bash for each microservice and run the command `./mvnw spring-boot: run`. The `eurekaserver` needs to be run before running any other microservices. Alternatively, you can import the project into IDE (e.g., IntelliJ, Eclipse) and run the application.
+	
 -------------------------------------------------------------------------------------------------------------------------
 
 3) **The Workers:** The workers could be android devices or desktop devices. It has two sub components. 1) The mobile client, and 2) The desktop client.
@@ -87,6 +92,8 @@ It is responsible for registering subscribed workers, receiving the task details
 **Steps to run complete system** ( To run any component, refer to the component's `Run` section for clear instructions.)
 
 * Open a terminal and start the Mosquitto broker using the command `net start mosquitto`.
+
+* Go to your browser and type `localhost:15672` and login with credentials user name=`guest` and password= `guest` and make sure the RabbitMQ instance is running.
 
 * Open a new terminal and start all the microservices instances of the middleware broker using command `./mvnw spring-boot: run`.
 
