@@ -58,7 +58,7 @@ It is responsible for registering subscribed workers, receiving the task details
 	
 	- After successful installation of RabbitMQ, In a browser open `localhost:15672`, you should be able to see running RabbitMQ instance.
 
-    - In path /module2-middleware-broker/microservices-app/ navigate to each microservice application folder (e.g., /microservices-app/eurekaserver) and open a separate terminal (or) git bash for each microservice and run the command `./mvnw spring-boot: run`. The `eurekaserver` needs to be run before running any other microservices. Alternatively, you can import the project into IDE (e.g., IntelliJ, Eclipse) and run the application.
+    - In path /module2-middleware-broker/microservices-app/ navigate to each microservice application folder (e.g., /microservices-app/eurekaserver) and open a separate terminal (or) git bash for each microservice and run the command `./mvnw spring-boot:run`. The `eurekaserver` needs to be run before running any other microservices. Alternatively, you can import the project into IDE (e.g., IntelliJ, Eclipse) and run the application.
 	
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -95,7 +95,7 @@ It is responsible for registering subscribed workers, receiving the task details
 
 * Go to your browser and type `localhost:15672` and login with credentials user name=`guest` and password= `guest` and make sure the RabbitMQ instance is running.
 
-* Open a new terminal and start all the microservices instances of the middleware broker using command `./mvnw spring-boot: run`.
+* Open a new terminal and start all the microservices instances of the middleware broker using command `./mvnw spring-boot:run`.
 
 * Now, go to your browser and type the Eureka server URL `localhost:8761`, you should be able to see all four running microservices instances in eureka server page.
 
